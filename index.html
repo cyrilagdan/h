@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Favorite Anime Character</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("hori.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: #222;
+    }
+    h1, h2 {
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    #nav {
+      position: sticky;
+      top: 0;
+      background: #222;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+    #nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    #nav a:hover {
+      color: #FFAA00;
+      transform: scale(1.1);
+    }
+    section { display: none; padding: 20px; }
+    section.active { display: block; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(0,0,0,0.6);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      overflow: hidden;
+      color: white;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card p {
+      padding: 10px;
+      text-align: center;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .song-list {
+      list-style-type: none;
+      padding: 0;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    .song-list li {
+      background: #fff;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      text-align: center;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .song-list li:hover {
+      background: #77AE9C;
+      color: white;
+      transform: scale(1.05);
+    } 
+    video, audio {
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #444;
+      border-radius: 8px;
+    }
+    .profile-text, .panel-text {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      font-size: 16px;
+      line-height: 1.6;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Suzumi Hiyori</h1>
+  <div id="nav">
+    <a onclick="showPage('home')">Home</a> |
+    <a onclick="showPage('about')">About</a> |
+    <a onclick="showPage('gallery')">Gallery</a> |
+    <a onclick="showPage('links')">Reference/Links</a> |
+    <a onclick="showPage('contact')">Contact</a> |
+    <a onclick="showPage('songs')">Songs & Videos</a>
+  </div>
+
+  <!-- Home -->
+  <section id="home" class="active">
+    <p class="panel-text">
+      Hello! I'm Cyril Ann. This is my Official Fan Website for Suzumi Hiyori. I hope you like it! :>    </p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2 style="color:#0055FF;">Character Profile</h2>
+    <p class="profile-text">
+      Hiyori Suzumi (涼海ひより, Suzumi Hiyori) is a character featured in Confession Executive Committee. 
+      She is a first year high school student attending Sakuragaoka High School when first introduced, 
+      and the heroine of the Heroine Taru Mono! anime. She is a first year high school student at Sakuragaoka High School during Class 1-1's second year of schooling.
+      Being from a small town, Hiyori isn't quite used to city living and is very interested in what Tokyo offers. From initial media, she seems to be an optimistic girl with a somewhat naive personality, and gets lost very easily. She             also doesn't seem to be culturally aware, given that she doesn't recognize the LIP×LIP duo or ASCANA despite them being popular singers, especially with girls her age.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2 style="color:Yellow;">Gallery</h2>
+    <div class="gallery">
+      <div class="card"><img src="109922_400.webp" alt="Hiyori 1"></div>
+      <div class="card"><img src="hi.webp" alt="Hiyori 2"></div>
+      <div class="card"><img src="Kawaii.jpg" alt="Extra Pic 1"></div>
+      <div class="card"><img src="Mui.webp" alt="Extra Pic 2"></div>
+      <div class="card"><img src="Suzumi.Hiyori.full.3734972.png" alt="Extra Pic 3"></div>
+      <div class="card"><img src="s.webp" alt="Hiyori 1"></div>
+      <div class="card"><img src="1.1.png" alt="Hiyori 2"></div>
+      <div class="card"><img src="1.6.webp" alt="Extra Pic 1"></div>
+      <div class="card"><img src="1.5.jpg" alt="Extra Pic 2"></div>
+      <div class="card"><img src="461068.jpg" alt="Extra Pic 3"></div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section id="links">
+    <h1 style="color:#92DDAB;">Reference/Links</h1>
+    <h2 style="color:#00E9BB;">View more here</h2>
+    <div class="panel-text">
+      <a href="https://lovecommittee.fandom.com/wiki/Hiyori_Suzumi" target="_blank">
+       <img src="Fandom logo.jpg" width="500" alt="cutie">    
+       </a>
+      <p><a href="https://anilist.co/character/182641/Hiyori-Suzumi" target="_blank">Anilist</a></p>
+  
+  </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 style="color:#0055FF;">Contact</h2>
+    <div class="panel-text">
+      <p>Email me at: <a href="mailto:cyrilagdan17@gmail.com">cyrilagdan17@gmail.com</a></p>
+    </div>
+  </section>
+
+  <!-- Songs & Videos -->
+  <section id="songs">
+    <h2 style="color:#92DDAB;">Her Songs</h2>
+    <ul class="song-list">
+      <li>Heroine Ikusei Keikaku (ヒロイン育成計画)</li>
+      <li>Heroine Tarumono! (ヒロインたるもの！)</li>
+      <li>Heroine wa Heikin Ika. (ヒロインは平均以下。)</li>
+      <li>Heroine to Idol (ヒロインとアイドル)</li>
+      <li>Heroine no Hero (ヒロインのヒーロー)</li>
+    </ul>
+    <h2 style="color:#92DDAB;">Featured and Group Songs</h2>
+    <ul class="song-list">
+      <li>Tokyo Sunny Party (東京サニーパーティ)</li>
+      <li>Kawaikunaritai (可愛くなりたい)</li>
+      <li>Tokyo Afternoon Tea (東京アフタヌーンティー)</li>  
+    </ul>
+    <h1 style="color:#92DDAB;">Video</h1>   
+    <video controls> 
+      <source src="Screenrecorder-2026-04-25-13-11-53-477.mp4" type="video/mp4"> 
+    </video>       
+    <audio controls> 
+      <source src="Heroine Ikkusei Keikaku.mp3" type="audio/mpeg">
+    </audio>
+  </section>
+
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+</body>
+</html>
